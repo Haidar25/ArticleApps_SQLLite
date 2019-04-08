@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5.ArtikelDetail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5.ArtikelList" />
+        </activity>
+        <activity android:name="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5.SettingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5.MainActivity" />
+        </activity>
+        <activity android:name="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5.BuatArtikel">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5.MainActivity" />
+        </activity>
+        <activity android:name="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5.ArtikelList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5.MainActivity" />
+        </activity>
+        <activity android:name="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.HAIDAR_1202164150_SI4006_PAB_MODUL5.MainActivity">
+        </activity>
+    </application>
+
+</manifest>

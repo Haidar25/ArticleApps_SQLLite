@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    tools:context=".ArtikelDetail">
+
+    <TextView
+        android:id="@+id/textview_judulnya"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textColor="?attr/textcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_penulis"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:maxLines="1"
+        android:text="TextView"
+        android:textColor="?attr/textcolor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_judulnya" />
+
+    <TextView
+        android:id="@+id/textview_deskripsinya"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="?attr/textcolor"
+        android:text="TextView"
+        android:textSize="?attr/fontSize"
+        app:layout_constraintBottom_toTopOf="@+id/notiftext"
+        app:layout_constraintEnd_toEndOf="@+id/textview_penulis"
+        app:layout_constraintStart_toStartOf="@+id/textview_penulis"
+        app:layout_constraintTop_toBottomOf="@+id/textview_penulis" />
+
+    <TextView
+        android:id="@+id/notiftext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Read with Big Font"
+        android:textColor="?attr/textcolor"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textview_deskripsinya"
+        app:layout_constraintStart_toStartOf="@+id/textview_deskripsinya" />
+</androidx.constraintlayout.widget.ConstraintLayout>
